@@ -1,6 +1,6 @@
 a {
   text-decoration: none;
-  color: #000;
+  color: #333;
 }
 img {
   vertical-align: top;
@@ -12,8 +12,11 @@ ul {
   padding: 0;
 }
 
+/* * {outline: 1px solid orange;} */
+
 body {
   font-size: 14px;
+  color: #333;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
@@ -55,7 +58,33 @@ main {
 
 .search-bar {
   margin-bottom: 36px;
+  /* position: relative; */
 }
+
+.search-icon {
+  position: relative;
+  left: 50px;
+  font-size: 16px;
+  color: #e3e3e3;
+}
+
+.search-bar .input-box {
+  width: 584px;
+  min-height: 44px;
+  border-radius: 24px;
+  border: 1px solid #dfe1e5;
+  padding-left: 60px;
+  padding-right: 60px;
+  box-sizing: border-box;
+  &:hover {
+    box-shadow: 0px 0px 1px 1px #cecece;
+  }
+  &:focus {
+    outline: 0;
+    box-shadow: 0px 0px 1px 1px #cecece;
+  }
+}
+
 .search-bar button {
   border: 0;
   background-color: #fff;
@@ -63,6 +92,15 @@ main {
 .mic,
 .camera {
   cursor: pointer;
+  position: relative;
+  font-size: 20px;
+  color: rgb(117, 117, 244);
+}
+.mic {
+  right: 90px;
+}
+.camera {
+  right: 80px;
 }
 
 .btn-box > button {
@@ -76,6 +114,10 @@ main {
     box-shadow: 0px 0px 1px 1px #cecece;
   }
 }
+.btn-box .google-search {
+  margin-right: 16px;
+}
+
 .language a {
   color: blue;
   &:hover {
@@ -92,6 +134,7 @@ footer {
 .f-top {
   padding: 15px 30px;
   border-bottom: 1px solid #dadce0;
+  font-size: 15px;
 }
 
 .f-bottom {
